@@ -199,16 +199,19 @@ body {
 }
 
 .card-info {
-  padding: 15px;
+  padding: 20px;
 }
 
+.card:hover {
+  transform: scale(1.01);
+}
 .card-info span {
   font-size: 12px;
   opacity: 0.7;
 }
 
 .card-info h3 {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 /* FOOTER */
