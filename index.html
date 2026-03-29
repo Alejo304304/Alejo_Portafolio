@@ -3,44 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.svg" type="image/x-icon">
 
-  <title>Alejo Designs</title>
+
+
+<meta name="title" content="Alejandro Amezquita | Diseñador Gráfico Profesional">
+<meta name="description" content="Diseñador gráfico profesional especializado en identidad visual, diseño para redes sociales, social media, edición multimedia y diseño web. Portafolio de trabajos creativos.">
+<meta name="keywords" content="diseñador gráfico, identidad visual, diseño de redes sociales, social media, edición multimedia, diseño web, branding, diseñador Colombia, diseñador freelance">
+<meta name="author" content="Alejandro Amezquita">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Alejo Amez | Diseñador Gráfico">
+<meta property="og:description" content="Portafolio de diseño gráfico: identidad visual, redes sociales, contenido digital y diseño web.">
+<meta property="og:image" content="assets/preview.png">
+<meta property="og:type" content="website">
+
+
+
+
+
+
+
+  <title>Alejo Amez | Diseñador Gráfico</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/pbs3hyg.css">
 </head>
 <body>
 
-  <header>
-    <div class="logo-container">
-      <img src="Logo.png" alt="Alejo Designs Logo">
-    </div>
-  </header>
+<header class="header">
+  <div class="container nav">
+    <img src="assets/simbolo.png" alt="logo" class="logo">
+    <a href="#" class="btn">¡Hablemos!</a>
+  </div>
+</header>
 
-  <section class="content">
-    <p></p>
-    
-    <div class="link-container">
-      <a href="https://www.behance.net/gallery/208801003/Portafolio-2024" target="_blank"> <img src="portafolio.svg" alt=""> Portafolio</a>
-      <a href="https://wa.link/wwj5o6" target="_blank"><img src="what.svg" alt="">WhatsApp</a>
-      
-      <!--
-      <a href="#" target="_blank"> <img src="servicios.svg" alt="">Servicios</a>
-      <a href="https://alejoamez.notion.site/Planes-Emprendedor-Alejo-Designs-bba74ecbb94a48f2b4213f7d05d9e602" target="_blank"><img src="planes.svg" alt="">Planes Emprendedor</a>
-      
-      
-    </div>
+<section class="hero">
+  <div class="container hero-content">
+    <h1 class="hero-title">DISEÑADOR    <br>                GRÁFICO</h1>
 
-    <div class="video-container">
-      <video autoplay loop muted playsinline>
-        <source src="video/tuvideo.mp4" type="video/mp4">
-        Tu navegador no soporta el tag de video.
-      </video>
+      <div class="services">
+        <div>
+          <span>#1</span>
+          <span>Identidad visual</span>
+        </div>
+        <div>
+          <span>#2</span>
+          <span>Contenido Redes</span>
+        </div>
+        <div>
+          <span>#3</span>
+          <span>Diseño Web</span>
+        </div>
     </div>
-  </section>
--->
-  <footer>
-    
-  </footer>
+  </div>
+</section>
+
+<section class="slider">
+  <div class="slider-track">
+    <img src="assets/no_photo.png">
+    <img src="assets/no_photo.png">
+    <img src="assets/no_photo.png">
+    <img src="assets/no_photo.png">
+    <img src="assets/no_photo.png">
+    <img src="assets/no_photo.png">
+  </div>
+</section>
+
+<section class="projects">
+  <div class="container">
+    <h2>PROYECTOS</h2>
+
+    <div class="grid">
+      <!-- repetir card -->
+      <div class="card">
+        <img src="assets/no_photo.png" alt="">
+        <div class="card-info">
+          <span>Identidad visual</span>
+          <h3>NOMBRE</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/no_photo.png" alt="">
+        <div class="card-info">
+          <span>Identidad visual</span>
+          <h3>NOMBRE</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/no_photo.png" alt="">
+        <div class="card-info">
+          <span>Identidad visual</span>
+          <h3>NOMBRE</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/no_photo.png" alt="">
+        <div class="card-info">
+          <span>Identidad visual</span>
+          <h3>NOMBRE</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-top">
+      <img class="logo_footer" src="assets/logo_footer.png" alt="">
+      
+      <a href="#" class="btn whatsapp-btn">
+      <div class="btn_container">     
+        <img src="assets/what.svg" alt="">
+        <span>¡Hablemos!</span>
+      </div>
+    </a>
+    <a href="">
+      <div class="btn_container_insta">
+        <span>Instagram</span>
+      </div>
+      
+    </a>
+</div>
+    <p>2026 todos los derechos reservados</p>
+  </div>
+</footer>
+
+
+
+<script>
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector(".header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
 
 </body>
 </html>
