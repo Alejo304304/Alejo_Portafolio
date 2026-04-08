@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="title" content="Alejandro Amezquita | Diseñador Gráfico Profesional">
+<meta name="description" content="Diseñador gráfico profesional especializado en identidad visual, diseño para redes sociales, social media, edición multimedia y diseño web. Portafolio de trabajos creativos.">
+<meta name="keywords" content="diseñador gráfico, identidad visual, diseño de redes sociales, social media, edición multimedia, diseño web, branding, diseñador Colombia, diseñador freelance">
+<meta name="author" content="Alejandro Amezquita">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Alejo Amez | Diseñador Gráfico">
+<meta property="og:description" content="Portafolio de diseño gráfico: identidad visual, redes sociales, contenido digital y diseño web.">
+<meta property="og:image" content="assets/preview.png">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_a.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_a.png">
+<link rel="apple-touch-icon" href="../assets/favicon_a.png">
+
+  <title>Proyecto | Pauki</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/pbs3hyg.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="../index.html"><img src="../assets/simbolo.png" alt="logo" class="logo"></a>
+    <a href="https://wa.me/573185257826?text=Hola%20👋%20vi%20tu%20portafolio%20y%20quiero%20más%20información%20sobre%20tus%20servicios💻✏️" class="btn" target="_blank">¡Hablemos!</a>
+  </div>
+</header>
+
+<section class="project">
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="../index.html#proyectos">PROYECTOS</a>
+      <span>/</span>
+      <span>PAUKI LOVERS</span>
+    </nav>
+
+    <!-- Imagen principal -->
+    <div class="project-hero">
+      <img src="../assets/proyectos/05_proyecto/02_banner.png" alt="">
+    </div>
+
+    <!-- Info -->
+    <div class="project-info">
+      <span class="tag">IDENTIDAD VISUAL</span>
+      <h1>PAUKI LOVERS</h1>
+      <p>
+        Tienda de bolsos y accesorios.
+      </p>
+    </div>
+
+    <!-- Galería -->
+    <div class="gallery">
+
+      <div class="row two">
+        <img src="../assets/proyectos/05_proyecto/img_proyecto_01.png" >
+        <img src="../assets/proyectos/05_proyecto/img_proyecto_02.png">
+      </div>
+
+      <div class="row full">
+        <img src="../assets/proyectos/05_proyecto/img_proyecto_03.png">
+      </div>
+
+      <div class="row two">
+        <img src="../assets/proyectos/05_proyecto/img_proyecto_04.png">
+        <img src="../assets/proyectos/05_proyecto/img_proyecto_05.png">
+      </div>
+
+      <div class="row full">
+        <img src="../assets/proyectos/05_proyecto/img_proyecto_06.png">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-top">
+      <img class="logo_footer" src="../assets/logo_footer.png" alt="">
+      
+      <a href="https://wa.me/573185257826?text=Hola%20👋%20vi%20tu%20portafolio%20y%20quiero%20más%20información%20sobre%20tus%20servicios💻✏️" class="btn whatsapp-btn" target="_blank">
+      <div class="btn_container">     
+        <img src="../assets/what.svg" alt="">
+        <span>¡Hablemos!</span>
+      </div>
+    </a>
+    <a href="https://www.instagram.com/alejoamezquita_/" target="_blank">
+      <div class="btn_container_insta" >
+        <span>Instagram</span>
+      </div>
+      
+    </a>
+</div>
+    <p>2026 todos los derechos reservados</p>
+  </div>
+</footer>
+
+
+
+
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+
+
+<script>
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector(".header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const images = document.querySelectorAll(".gallery img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  images.forEach(img => {
+    img.addEventListener("click", function () {
+      lightbox.style.display = "flex";
+      lightboxImg.src = this.src;
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  closeBtn.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+});
+</script>
+
+
+
+</body>
+</html>
