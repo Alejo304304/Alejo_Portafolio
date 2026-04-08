@@ -494,7 +494,6 @@ body {
   height: 700px;
   object-fit: cover;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 /* 🔹 INFO */
@@ -502,7 +501,7 @@ body {
   background: #0a0a0a;
   padding: 25px;
   border-radius: 5px;
-  margin-top: -40px;
+  margin-top: ;
   width: 100%;
 }
 
