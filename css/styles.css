@@ -322,6 +322,10 @@ body {
     gap: 35px;
   }
 
+  .card img:hover {
+    transform: none;
+}
+
 
   /* números */
   .services span:nth-child(odd) {
@@ -369,6 +373,10 @@ body {
 
 .card img {
   height: 300px;
+}
+
+.card img:hover {
+    transform: none;
 }
 
   
@@ -444,6 +452,10 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
+}
+
+.card img:hover {
+    transform: none;
 }
 
 
