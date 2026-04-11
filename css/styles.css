@@ -36,12 +36,22 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
 
+.nav-link {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+
+.nav a:first-child {
+  margin-right: auto; /* 🔑 empuja todo a la derecha */
+}
+
 .logo {
+  align-items: first baseline;
   width: 40px;
 }
 
@@ -52,7 +62,7 @@ body {
   border-radius: 20px;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* HERO */
@@ -185,6 +195,350 @@ body {
 
 
 
+/* ABOUT */
+
+
+.about-content {
+  padding-top: 100px;
+  margin-top: -30px;
+  display: flex;
+}
+
+.about-title {
+  margin: 20px 0px;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+ .about-description {
+  margin-bottom: 30px;
+  width: 60%;
+ }
+
+
+ .about-carater {
+  display: flex;  
+  margin-bottom: 40px
+ }
+ .about-text h2{
+  line-height: 25px;
+  margin-right: 40px;
+
+ }
+
+ .about-sofware {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40px;
+ }
+
+ .about-sofware img {
+  width: 220px;
+  margin-top: 10px;
+ }
+
+ 
+/* imagen */
+.about-image img {
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 📱 responsive movil */
+@media (max-width: 768px) {
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+
+  .about-title {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.about-description {
+  margin-bottom: 30px;
+  width: 90%;
+ }
+  
+ .about-carater {
+  display: block;  
+  margin-bottom: 40px
+ }
+
+ .about-text h2{
+  line-height: 25px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+
+ }
+
+ .about-sofware {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 40px;
+ }
+
+
+
+
+
+
+
+}
+
+/* 📱 responsive tablet */
+@media (max-width: 1200px) {
+
+  .about-image img {
+  height: 450px;
+}
+
+.about-text {
+  margin-right: 10px;
+
+}
+
+.about-description {
+  width: 80%;
+ }
+
+ 
+
+
+}
+
+
+
+
+
+
+/* PLANES DE DISEÑO */
+
+  .plans {
+    background-color: #0a0a0a;
+    margin-top: 20px;
+    padding: 40px 0px;
+  }
+  .plans-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .plans-description {
+    align-items: center;
+    width: 60%;
+  }
+
+  .plans {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.plans-title {
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* TARJETA */
+#active1 {
+  background: linear-gradient(180deg, #404040, #0a0a0a);  
+}
+
+#active2 {
+  background: linear-gradient(180deg, #232222, #0a0a0a);
+}
+
+.plan-card {
+  background: linear-gradient(180deg, #1a1a1a, #0a0a0a);
+  border-radius: 10px;
+  padding: 40px 30px;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.plan-card:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+/* textos */
+.plan-label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+.plan-title {
+  font-size: 32px;
+  margin: 5px 0 25px;
+}
+
+/* lista */
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.plan-features li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #ccc;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* puntico */
+.plan-features li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #888;
+}
+
+  .plan-features p {
+    font-size: 12px;
+    color: #636363;
+    line-height: 25PX;
+  }
+
+/* precio */
+.plan-price span {
+  font-size: 14px;
+  color: #777;
+}
+
+.plan-price h4 {
+  font-size: 30px;
+  margin: -5px 0 25px;
+}
+
+/* botón */
+.plan-btn {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0,5s;
+}
+
+
+/* 📱 responsive movil */
+@media (max-width: 768px) {
+
+  .plans h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .plans-grid {
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+.plan-card:hover {
+  transform: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* grid de planes */
+
+.plans-grid {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas desktop */
+  justify-items: center;
+}
+
+/* imágenes verticales */
+
+.plans-grid img {
+  max-width: 410px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.3s ease;
+  margin: 10px;
+}
+
+
+/* hover */
+.plans-grid img:hover {
+  transform: scale(1.03);
+}
+
+
+
+@media (max-width: 768px) {
+
+.plans-grid {  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 3 columnas desktop */
+  justify-items: center;
+}
+
+.plans-grid img:hover {
+  transform: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* PROJECTS */
@@ -223,7 +577,7 @@ body {
 
 .card img:hover {
   transition: 0.6s;
-  transform: scale(1.03);
+  transform: scale(1.02);
   height: 400px;
 }
 .card-info span {
@@ -310,6 +664,12 @@ body {
 
 /* MOBILE */
 @media (max-width: 768px) {
+
+  /* NAV */
+
+  .nav-link {
+    display: none;
+  }
 
   /* HEROO */
 
