@@ -345,7 +345,7 @@ body {
   }
 
   .plans-description p {
-    max-width: 75%;
+    max-width: 60%;
   }
 
 
@@ -466,6 +466,10 @@ body {
 .plan-card:hover {
   transform: none;
 }
+
+.plans-description p {
+    max-width: 90%;
+  }
 
 }
 
