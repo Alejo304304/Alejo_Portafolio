@@ -226,8 +226,198 @@
 
 
 
+<section class="projects" id="proyectos">
+  <div class="container">
 
-<section id="proyectos" class="projects">
+    <h2 class="projects-title">PROYECTOS</h2>
+
+    <!-- BOTONES -->
+    <div class="project-tabs">
+      <button data-tab="branding" class="active">IDENTIDAD VISUAL</button>
+      <button data-tab="social">REDES SOCIALES</button>
+      <button data-tab="web">DISEÑO WEB</button>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="projects-content">
+
+      <div class="tab-content active" id="branding">
+        <div class="grid" class="projects-grid">
+
+          <!-- proyectos de identidad de marca  -->
+
+        <a href="proyectos/lechonarun.html">
+        <div class="card">
+          <img src="assets/proyectos/04_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD VISUAL</span>
+            <h3>LECHONA RUN</h3>
+          </div>
+        </div>
+      </a>
+
+
+       <a href="proyectos/invictus.html">
+        <div class="card">
+          <img src="assets/proyectos/01_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD VISUAL</span>
+            <h3>INVICTUS</h3>
+          </div>
+        </div>
+      </a>
+
+
+      <a href="proyectos/reto.html">
+        <div class="card">
+          <img src="assets/proyectos/07_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD VISUAL</span>
+            <h3>RETO GATO BEDOYA 2026</h3>
+          </div>
+        </div>
+      </a>
+
+      <a href="proyectos/casadelaalmojabana.html">
+        <div class="card">
+          <img src="assets/proyectos/02_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD VISUAL</span>
+            <h3>CASA DE LA ALMOJÁBANA</h3>
+          </div>
+        </div>
+      </a>
+
+      <a href="proyectos/angus.html">
+        <div class="card">
+          <img src="assets/proyectos/03_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD / REDES SOCIALES</span>
+            <h3>ANGUS BURGER</h3>
+          </div>
+        </div>
+      </a>     
+
+
+      <a href="proyectos/pauki.html">
+        <div class="card">
+          <img src="assets/proyectos/05_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD</span>
+            <h3>PAUKI</h3>
+          </div>
+        </div>
+      </a>
+
+      <a href="proyectos/mari.html">
+        <div class="card">
+          <img src="assets/proyectos/06_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD</span>
+            <h3>MARI Carnes Frías</h3>
+          </div>
+        </div>
+      </a>
+
+      
+
+      <a href="proyectos/belife.html">
+        <div class="card">
+          <img src="assets/proyectos/08_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD</span>
+            <h3>BE LIFE</h3>
+          </div>
+        </div>
+      </a>
+
+      <a href="proyectos/zamora.html">
+        <div class="card">
+          <img src="assets/proyectos/09_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD</span>
+            <h3>ZAMORA</h3>
+          </div>
+        </div>
+      </a>
+
+
+
+
+        </div>
+      </div>
+
+      <div class="tab-content" id="social">
+        <div class="grid" class="projects-grid">
+
+          <!-- proyectos de Redes sociales -->
+
+
+
+        <a href="proyectos/gato.html">
+        <div class="card">
+          <img src="assets/proyectos/010_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>REDES SOCIALES</span>
+            <h3>GATO BEDOYA</h3>
+          </div>
+        </div>
+      </a>
+
+
+        <a href="proyectos/angus.html">
+        <div class="card">
+          <img src="assets/proyectos/03_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>IDENTIDAD / REDES SOCIALES</span>
+            <h3>ANGUS BURGER</h3>
+          </div>
+        </div>
+      </a>
+
+      <a href="proyectos/empanadeando.html">
+        <div class="card">
+          <img src="assets/proyectos/011_proyecto/01_portada.webp" alt="">
+          <div class="card-info">
+            <span>REDES / MENÚ</span>
+            <h3>EMPANADEANDO</h3>
+          </div>
+        </div>
+      </a>
+
+        
+
+
+
+
+
+
+        </div>
+      </div>
+
+      <div class="tab-content" id="web">
+        <div class="grid" class="projects-grid">
+
+          <!-- proyectos de Diseño Web -->
+
+         
+
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- proyectos lista todos 
+
+<section  class="projects">
   <div class="container">
     <h2>PROYECTOS</h2>
 
@@ -364,6 +554,9 @@
 
 
 
+-->
+
+
 <footer class="footer">
   <div class="container footer-content">
     <div class="footer-top">
@@ -394,6 +587,38 @@
     header.classList.toggle("scrolled", window.scrollY > 50);
   });
 </script>
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const buttons = document.querySelectorAll(".project-tabs button");
+  const tabs = document.querySelectorAll(".tab-content");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+      buttons.forEach(btn => btn.classList.remove("active"));
+      tabs.forEach(tab => tab.classList.remove("active"));
+
+      button.classList.add("active");
+      document.getElementById(button.dataset.tab).classList.add("active");
+
+    });
+  });
+
+});
+</script>
+
+
+
+
 
 </body>
 </html>
